@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Body-shop (Denting & Painting)</title>
+	<style>
+		/* Font Face */
+		@font-face {
+			font-family: 'Mukta';
+			src: url('fonts/mukta.ttf') format('ttf');
+			font-weight: 200;
+			font-style: normal;
+		}
+
+		body {
+			font-family: 'Mukta', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			text-align: center; /* Center align the heading */
+		}
+
+		p {
+			font-size: 16px;
+			margin-bottom: 10px;
+			text-align: justify; /* Add text alignment */
+		}
+
+		ul {
+			margin-bottom: 10px;
+		}
+
+		li {
+			margin-bottom: 5px;
+		}
+
+		.note {
+			font-style: italic;
+			font-size: 12px; /* Reduce font size for the note */
+		}
+
+		.home-link {
+			color: #f00;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.home-link::after {
+			content: ' >>';
+		}
+
+		 .footer {
+			background-color: #000;
+			color: #fff;
+			padding: 20px;
+			margin: 0;
+		}
+
+
+		.footer-menu-column {
+			flex-basis: 25%;
+			max-width: 220px;
+			padding: 20px;
+		}
+
+		.footer-menu-column h3 {
+			color: #ff0;
+			font-size: 18px;
+			margin: 0 0 10px 0;
+			padding: 0;
+		}
+
+		.footer-menu-column ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.footer-menu-column ul li {
+			margin-bottom: 10px;
+		}
+
+		.footer-menu p {
+			margin: 0;
+		}
+
+		.footer-menu a {
+			color: #fff;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+
+		.footer-menu a:hover {
+			color: #ff0;
+		} 
+
+
+		.footer-menu {
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	transition: background-color 0.3s;
+  }
+  
+  .footer-menu-column {
+	flex-basis: 25%;
+	max-width: 220px;
+	padding: 20px;
+	transition: transform 0.3s;
+  }
+  
+  .footer-menu:hover {
+	background-color: #000; /* Change the background color on hover */
+  }
+  
+  .footer-menu-column:hover {
+	transform: scale(1.1);
+  }
+
+		.title-bar {
+			background-color: #000;
+			color: #fff;
+			padding: 10px;
+			margin: 0;
+		}
+
+		.title-bar h1 {
+			font-size: 24px;
+			margin: 0;
+			padding: 0;
+			text-align: center; /* Center align the heading */
+		}
+
+		.title-bar span {
+			color: #f00;
+			margin-left: 10px;
+		}
+
+		.container {
+			margin: 0 5%; /* Add 5% margin on both sides */
+		}
+
+		.autoalchemy-bar {
+			height: 40px; /* Increase the height of the AutoAlchemy bar */
+			margin-bottom: 20px;
+			background-color: transparent; /* Remove the background color */
+			display: flex;
+			align-items: center;
+			padding: 10px;
+		}
+
+		.autoalchemy-bar a {
+			margin-right: 10px; /* Add spacing between elements */
+		}
+
+		.home-link {
+			margin-top: 20px;
+			margin-left: 0px;
+		}
+
+		.ceramic-graphene-heading {
+			margin-top: 20px;
+			margin-left: 0px; /* Adjust the margin as desired */
+			text-align: left; /* Align heading to the left */
+		}
+
+		p {
+			margin-bottom: 15px; /* Add more space between lines */
+		}
+	</style>
+</head>
+<body>
+	<div class="title-bar">
+		<h1>AutoAlchemy</h1>
+		<span>|</span>
+	</div>
+	<div class="container">
+		<div class="autoalchemy-bar">
+			<a href="index.html" class="home-link">Home</a>
+			<span class="bodyshop-heading">Body-shop (Denting &amp; Painting)</span>
+		</div>
+		<h1 class="bodyshop-heading">Body-shop (Denting &amp; Painting)</h1>
+		<p>We provide A-grade painting services across all types and categories of cars available in the market. It could be a panel of your new car, a complete outer body paint job for a decently aged vehicle, a custom color paint job of your choice, or maybe even a hardcore restoration of your old family's car; we are here to help you out. Our experienced staff puts utmost attention in bringing out the best possible finish on your car's paint. We diligently follow all required protocols and focus on delivering an exceptional experience that you probably might not have had at a body-shop before. Our paint jobs come with a 2-year application warranty, and if taken good care of, the paint can easily last you a decade.</p>
+		<p>Choose from a range of Body, Wheel, Glasses, Plastic trim coatings, and Paint protection films after the Paint job, here at Brotomotiv. Full body paint jobs get discounts on detailing and paint protection services.</p>
+		<p>Contact us by filling out the enquiry form and get your car painted today.</p>
+		<h2 class="note">Note:</h2>
+		<ul>
+			<li>Heavily rusted vehicles or vehicles which have been painted multiple times before will not be covered under warranty.</li>
+			<li>We provide a 6-month warranty on Rusting, 1-year warranty on Blistering, Cracking, Peeling &amp; Paint adhesion, and a 3-year warranty on Clear coat failure and/or Paint failure.</li>
+			<li>Paint shrinkage is normal and acceptable on cars with heavy base work. However, cracking and peeling of paint in such cars are still covered under warranty.</li>
+			<li>Life of the paint is totally dependent on the usage and maintenance by the customer.</li>
+		</ul>
+	</div>
+	<footer class="footer">
+		<div class="footer-menu">
+			<div class="footer-menu-column">
+				<h3>Our Services</h3>
+				<ul>
+					<li><a href="ceramic.html">Ceramic &amp; Graphene Coatings</a></li>
+					<li><a href="ppf.html">Paint Protection Films</a></li>
+					<li><a href="bodyshop.html">Body-Shop (Denting &amp; Painting)</a></li>
+					<li><a href="wrapjobs.html">Wrap Jobs</a></li>
+					<li><a href="detailing.html">Detailing and Interior Cleaning</a></li>
+					<li><a href="insurance.html">Insurance Claims</a></li>
+					<li><a href="other%20services.html">Other Services</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="footer-menu-column">
+				<h3>Other Services</h3>
+				<ul>
+					<li>Under-body Anti-Rust Coatings</li>
+					<li>Windshield and All Glass Polishing</li>
+					<li>Seat Covers and Door Pad Leather Upholstery</li>
+					<li>Steering, Gear Knob and Gear Bellow Covers</li>
+					<li>7D Mats with Custom Stitchings</li>
+					<li>Headlight and Taillight Restorations</li>
+					<li>Body Washing and Vacuuming</li>
+					<li>Headliners Replacement</li>
+				</ul>
+			</div>
+			<div class="footer-menu-column">
+				<h3>Visit The Store</h3>
+				<p>Address: Lane No. 1, Right Turn, Kapil Nagar street, Behind Water Tank Road, Wadgaon Sheri Rd, opp. Novotel, Pune, Maharashtra 411014</p>
+			</div>
+			<div class="footer-menu-column">
+				<h3>Contact Us</h3>
+				<p>Email: contact@autoalchemy.in</p>
+				<p>(Please do not send service/work enquiry on this mail. Click service enquiry on top of the page for enquiries.)</p>
+				<p>Phone: 022 - 35155706</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

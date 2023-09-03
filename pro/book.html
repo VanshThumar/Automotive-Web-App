@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AutoAlchemy - Book Now</title>
+    
+<link rel="stylesheet" type="text/css" href="bookstyle.css"> 
+     
+	
+</head>
+<body>
+    <div class="title-bar">
+        <a href="index.html"><h1>AutoAlchemy</h1></a>
+        <span>|</span>
+    </div>
+    
+    <header class="header-bg">
+        <div class="quote-section">
+            <h2 class="quote">Book Your Services Now</h2>
+        </div>
+    </header>
+    <section id="booking-form">
+        <div class="booking-container">
+            <form>
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Car Type:</label>
+                    <div class="car-type">
+                        <input type="radio" id="hatchback" name="carType" value="hatchback" required>
+                        <label for="hatchback">Hatchback</label>
+                        <input type="radio" id="sedan" name="carType" value="sedan">
+                        <label for="sedan">Sedan</label>
+                        <input type="radio" id="suv" name="carType" value="suv">
+                        <label for="suv">SUV</label>
+                        <input type="radio" id="crossover" name="carType" value="crossover">
+                        <label for="crossover">Crossover</label>
+                        <input type="radio" id="coupe" name="carType" value="coupe">
+                        <label for="coupe">Coupe</label>
+                        <input type="radio" id="convertible" name="carType" value="convertible">
+                        <label for="convertible">Convertible</label>
+                        <input type="radio" id="vintage" name="carType" value="vintage">
+                        <label for="vintage">Vintage</label>
+                        <input type="radio" id="otherCarType" name="carType" value="other">
+                        <label for="otherCarType">Other</label>
+                    </div>
+                </div>
+                <div class="form-group-wide">
+                    <label>Services:</label>
+                    <label><input type="checkbox" name="services[]" value="Ceramic Coating"> Ceramic Coating</label>
+                    <label><input type="checkbox" name="services[]" value="Paint Protection Film"> Paint Protection Film</label>
+                    <label><input type="checkbox" name="services[]" value="Paint Protection Film"> Denting</label>
+                    <label><input type="checkbox" name="services[]" value="Paint Protection Film"> Painting</label>
+                    <label><input type="checkbox" name="services[]" value="Paint Protection Film"> Wrap job</label>
+                    <label><input type="checkbox" name="services[]" value="Paint Protection Film"> Detailing </label>
+                    <label><input type="checkbox" name="services[]" value="Paint Protection Film"> Interior Cleaning</label>
+                    <label><input type="checkbox" name="services[]" value="Paint Protection Film"> Insurance Claims</label>
+                    
+                </div>
+                <div class="form-group-wide">
+                    <label>Other Small Services:</label>
+                    <label><input type="checkbox" name="smallServices[]" value="Under-body Anti-Rust Coatings"> Under-body Anti-Rust Coatings</label>
+                    <label><input type="checkbox" name="smallServices[]" value="Windshield Polishing"> Windshield Polishing</label>
+                    <label><input type="checkbox" name="smallServices[]" value="Seat Covers and Door Pad Leather Upholstery"> Seat Covers and Door Pad Leather Upholstery</label>
+                    <label><input type="checkbox" name="smallServices[]" value="Steering, Gear Knob and Gear Bellow Covers"> Steering, Gear Knob and Gear Bellow Covers</label>
+                    <label><input type="checkbox" name="smallServices[]" value="7D Mats with Custom Stitchings"> 7D Mats with Custom Stitchings</label>
+                    <label><input type="checkbox" name="smallServices[]" value="Headlight and Taillight Restorations">Headlight and Taillight Restorations</label>
+                    <label><input type="checkbox" name="smallServices[]" value="Body Washing and Vacuuming"> Body Washing and Vacuuming</label>
+                    <label><input type="checkbox" name="smallServices[]" value="Headliners Replacement">Headliners Replacement</label>
+                
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+		<div class="footer-menu">
+			<div class="footer-menu-column">
+				<h3>Our Services</h3>
+				<ul>
+					<li><a href="ceramic.html">Ceramic &amp; Graphene Coatings</a></li>
+					<li><a href="ppf.html">Paint Protection Films</a></li>
+					<li><a href="bodyshop.html">Body-Shop (Denting &amp; Painting)</a></li>
+					<li><a href="wrapjobs.html">Wrap Jobs</a></li>
+					<li><a href="detailing.html">Detailing and Interior Cleaning</a></li>
+					<li><a href="insurance.html">Insurance Claims</a></li>
+					<li><a href="other%20services.html">Other Services</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="footer-menu-column">
+				<h3>Other Services</h3>
+				<ul>
+					<li>Under-body Anti-Rust Coatings</li>
+					<li>Windshield and All Glass Polishing</li>
+					<li>Seat Covers and Door Pad Leather Upholstery</li>
+					<li>Steering, Gear Knob and Gear Bellow Covers</li>
+					<li>7D Mats with Custom Stitchings</li>
+					<li>Headlight and Taillight Restorations</li>
+					<li>Body Washing and Vacuuming</li>
+					<li>Headliners Replacement</li>
+				</ul>
+			</div>
+			<div class="footer-menu-column">
+				<h3>Visit The Store</h3>
+				<p>Address: Lane No. 1, Right Turn, Kapil Nagar street, Behind Water Tank Road, Wadgaon Sheri Rd, opp. Novotel, Pune, Maharashtra 411014</p>
+			</div>
+			<div class="footer-menu-column">
+				<h3>Contact Us</h3>
+				<p>Email: contact@autoalchemy.in</p>
+				<p>(Please do not send service/work enquiry on this mail. Click service enquiry on top of the page for enquiries.)</p>
+				<p>Phone: 022 - 35155706</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+

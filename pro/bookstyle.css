@@ -1,0 +1,223 @@
+/* Font Face */
+@font-face {
+    font-family: 'Mukta';
+    src: url('fonts/mukta.ttf') format('ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f0f0, #ddd);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.title-bar {
+    background-color: #1E2328; /* Dark black */
+    color: #FED053; /* Yellow */
+    padding: 10px;
+    margin: 0;
+}
+
+.title-bar h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.title-bar span {
+    color: #FF0; /* Yellow */
+    margin-left: 10px;
+}
+
+.header-bg {
+    position: relative;
+    height: 300px; /* You can adjust the height as needed */
+    background-image: url('header/d.jpeg'); /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This makes the background image fixed */
+    z-index: -1; /* Send the background image to the back */
+}
+
+/* Rest of your existing CSS remains the same */
+
+
+
+.header-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.quote-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.quote {
+    font-size: 48px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.5s;
+}
+
+.booking-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeInUp 1s forwards 1s;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1E2328; /* Dark black */
+}
+
+.form-group select,
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #F0F0F0; /* Light gray */
+    color: #000;
+    border-radius: 5px;
+}
+
+.car-type {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 13px 25px;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #FFD700, #FFDB00); /* Yellow gradient */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #FFDB00, #FFD700); /* Yellow gradient */
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    margin-bottom: 15px; /* Add more space between lines */
+}
+
+.footer {
+    background-color: #1E2328; /* Dark black */
+    color: #FFF; /* White */
+    padding: 20px;
+    margin: 0;
+    width: 100%; /* Extend to the edges */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu-column h3 {
+    color: #FF0; /* Yellow */
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.footer-menu-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    color: #FFF; /* White */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #FF0; /* Yellow */
+}
+
+.footer-menu {
+    background-color: #1E2328; /* Dark black */
+    color: #FFF; /* White */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%; /* Extend to the edges */
+}
+
+.footer-menu-column {
+    flex-basis: 25%;
+    max-width: 220px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.footer-menu:hover {
+    background-color: #1E2328; /* Dark black */
+}
+
+.footer-menu-column:hover {
+    transform: scale(1.1);
+}
+
+.form-group.wide {
+    flex-basis: 100%; /* Set the width to 70% */
+}
+
+.form-group.wide label {
+    width: 100%; /* Use the full width of the label */
+    display: block;
+}
+
+.form-group.wide input[type="checkbox"] {
+    margin-right: 10px; /* Add some space between the checkbox and label */
+}
